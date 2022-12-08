@@ -1,0 +1,86 @@
+.footer {
+    background: rgba(34, 54, 69, 0.98);
+}
+
+.footer .footContent .logo {
+    width: 100%;
+    max-width: 200px;
+}
+
+.footer .footContent .logo img {
+    width: 100%;
+}
+
+.footer .footContent .col {
+    width: 25%;
+    padding-right: 40px;
+}
+.footer .footContent .col:nth-child(1){
+    width: 30%;
+    /* border: 1px solid red; */
+}
+.footer .footContent .col:nth-child(2){
+    width: 23%;
+    /* border: 1px solid red; */
+}
+.footer .footContent .col:nth-child(3){
+    width: 23%;
+    /* border: 1px solid red; */
+}
+.footer .footContent .col:nth-child(4){
+    width: 23%;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+.footer .footContent .col .foot_heading {
+    position: relative;
+    padding: 0 0 15px 0;
+    display: inline-block;
+}
+
+.footer .footContent .col .foot_heading::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background: #3A78C9;
+}
+
+.footer .footContent .col .content p {
+    margin-bottom: 5px;
+}
+
+.footer .footContent .col .content p svg {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.footer .footContent .col .content p:nth-child(1) {
+    margin-bottom: 20px;
+}
+
+.footer .footContent .logoContent p{
+    margin-top: 20px;
+}
+.footer .footContent .col .content {
+    margin-top: 51px;
+}
+
+.footer .footContent .col .blogs .card .thumb {
+    overflow: hidden;
+    width: 50%;
+}
+
+.footer .footContent .col .blogs .card .thumb img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer .footContent .col .blogs .card .text {
+    margin-left: 10px;
+}
+
+.footer .footContent .col .blogs .card .content {}
