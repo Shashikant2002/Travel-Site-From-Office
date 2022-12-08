@@ -4,11 +4,12 @@ import Logo from '../../Assets/Image/logo.png';
 import { FiPhoneCall, FiMail } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 import blog from '../../Assets/Image/postThumb.jpg';
+import Socal from '../Socal/Socal';
 
 const Footer = () => {
     return (
         <>
-            <footer className="footer commonSection">
+            <footer className="footer">
                 <div className="container">
                     <div className="footContent justifyContentBetween flex">
                         <div className="col logoContent">
@@ -57,11 +58,53 @@ const Footer = () => {
                         <div className="col">
                             <h5 className='foot_heading colorWhite'>GALLERY</h5>
                             <div className="content">
-                                    
-                            </div>  
-                        </div>
+                                <div className="gallery flex flexWrap">
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
+                                    <figure className='flex'>
+                                        <img src={blog} alt="BlogImage" />
+                                    </figure>
 
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
+                    <div className="addWithUs flex justifyContentBetween alignItemCenter">
+                        <div className="addUs">
+                            <p className='colorWhite'>Subscribe our newsletter for more update & news !!</p>
+                            <form action="/">
+                                <input type="email" placeholder='Enter Your Email'/>
+                                <button type='submit' className='globalBorderBtn'>SUBSCRIBE</button>
+                            </form>
+                        </div>
+                        <div className="termSocal">
+                            <Socal />
+                            <div className="links flex">
+                                <a className='colorWhite' href="/">Privacy Policy</a>
+                                <p className='colorWhite'>|</p>
+                                <a className='colorWhite' href="/">Term & Condition</a>
+                                <p className='colorWhite'>|</p>
+                                <a className='colorWhite' href="/">FAQ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="bottomFot">
+                    <p className='colorWhite'>Copyright © 2022 Traveler. All rights reserved.</p>
                 </div>
             </footer>
         </>

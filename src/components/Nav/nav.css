@@ -19,6 +19,7 @@
     margin: 5px 0;
     padding: 10px 0;
     cursor: pointer;
+    transition: .5s;
 }
 .nav ul li .level_2 li:hover{
     background: #3A78C9;
