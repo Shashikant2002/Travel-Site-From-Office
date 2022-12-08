@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  text-decoration: none;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2{
+  font-size: 4rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.bor {
+  border: 1px solid red;
+}
+
+.flex {
   display: flex;
-  flex-direction: column;
+}
+
+.alignItemCenter {
   align-items: center;
+}
+
+.justifyContentCenter {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.justifyContentBetween {
+  justify-content: space-between;
+}
+.flexDirCol{
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.colorWhite {
+  color: #fff;
+}
+
+.globalBtn {
+  cursor: pointer;
+  color: #fff;
+  background: #3A78C9;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+  display: inline-block;
+  transition: .5s;
+}
+.globalBtn:hover {
+  color: #fff;
+  background: #3a78c900;
+  border: 1px solid #fff
+}
+
+.globalBorderBtn {
+  cursor: pointer;
+  transition: .5s;
+  color: #fff;
+  background: transparent;
+  border-radius: 20px;
+  padding: 10px 30px;
+  border: 1px solid #fff;
+  display: inline-block;
+}
+.globalBorderBtn:hover {
+  color: #fff;
+  background: #3A78C9;
+  border: 1px solid transparent;
 }

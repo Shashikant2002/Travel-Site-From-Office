@@ -1,0 +1,49 @@
+.nav ul li {
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    transition: .5s;
+}
+
+.nav ul li a:hover {
+    color: #3A78C9;
+}
+.nav ul li a svg{
+    margin-left: 5px;
+}
+.nav ul li{
+    position: relative;
+}
+.nav ul li .level_2 li{
+    margin: 5px 0;
+    padding: 10px 0;
+    cursor: pointer;
+}
+.nav ul li .level_2 li:hover{
+    background: #3A78C9;
+}
+.nav ul li .level_2 li a{
+    color: #fff;
+}
+.nav ul li .level_2{
+    margin-top: 10px;
+    position: absolute;
+    min-width: 170px;
+    max-width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    background: rgba(0, 0, 0, 0.596);
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: .5s;
+    padding: 0px 0px;
+    border-radius: 10px;
+}
+.nav ul li:hover .level_2{
+    height: auto;
+    padding: 10px 0px;
+    
+}

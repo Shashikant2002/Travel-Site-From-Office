@@ -1,0 +1,16 @@
+.socal .icon a{
+    margin: 0 10px;
+    border: 1px solid #3a78c96b;
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .5s;
+}
+.socal .icon a:hover{
+    border: 1px solid #3a78c9;
+}
+
+.socal .icon a svg{
+    font-size: 1.3rem;
+}
