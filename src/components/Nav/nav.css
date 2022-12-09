@@ -16,10 +16,11 @@
     position: relative;
 }
 .nav ul li .level_2 li{
-    margin: 5px 0;
     padding: 10px 0;
+    margin: 0;
     cursor: pointer;
     transition: .5s;
+    border-top: 1px solid #3a78c967;
 }
 .nav ul li .level_2 li:hover{
     background: #3A78C9;
@@ -28,16 +29,15 @@
     color: #fff;
 }
 .nav ul li .level_2{
-    margin-top: 10px;
+    margin-top: 5px;
     position: absolute;
-    min-width: 170px;
-    max-width: 100%;
+    width: 200px;
     left: 50%;
     transform: translateX(-50%);
     top: 100%;
-    background: rgba(0, 0, 0, 0.596);
+    background: rgba(0, 0, 0, 0.952);
     text-align: center;
-    height: 0;
+    height: 0px;
     overflow: hidden;
     transition: .5s;
     padding: 0px 0px;
@@ -45,6 +45,6 @@
 }
 .nav ul li:hover .level_2{
     height: auto;
-    padding: 10px 0px;
+    border-top: 2px solid #3A78C9;
     
 }

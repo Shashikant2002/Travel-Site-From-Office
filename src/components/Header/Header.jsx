@@ -21,16 +21,15 @@ const Header = () => {
         const contactHeader = document.getElementById('contactHeader');
         contactHeader.classList.remove('contentActive');
     }
+
     const sidemenuOpen = () => {
         const sideMenu = document.getElementById('sideMenu');
-        sideMenu.style.display = 'block';
+        sideMenu.classList.add('showSideMenu');
         sideMenu.children[0].style.right = '0%';
-        sideMenu.children[0].style.animation = 'sidemenuInAnim .3s linear'
     }
     const sidemenuClose = () => {
         const sideMenu = document.getElementById('sideMenu');
-        sideMenu.children[0].style.animation = 'sidemenuInAnim .3s linear'
-        sideMenu.style.display = 'none';
+        sideMenu.classList.remove('showSideMenu');
         sideMenu.children[0].style.right = '-100%';
     }
 
@@ -40,7 +39,7 @@ const Header = () => {
                 <div className="container">
                     <div className="topHead flex justifyContentBetween alignItemCenter">
                         <div className="contact flex alignItemCenter">
-                            <div className="icon colorWhite" onClick={() => openContactMobile()}>
+                            <div className="icon colorWhite flex" onClick={() => openContactMobile()}>
                                 <FiPhoneCall />
                             </div>
                             <div id='contactHeader' className="content">
@@ -55,13 +54,21 @@ const Header = () => {
                         <div className="menuSearch flex alignItemCenter">
                             <div className="search colorWhite flex justifyContentCenter alignItemCenter">
                                 <BiSearchAlt2 />
+                                <div className="searchBox flex justifyContentCenter alignItemCenter">
+                                    <form  action="/" className='flex flexDirCol'>
+                                        <input type="text" placeholder='Search Heere' />
+                                        <button className='globalBtn' type='sumbit'>Search</button>
+                                    </form>
+                                </div>
                             </div>
                             <div className="menu colorWhite" onClick={() => sidemenuOpen()}>
                                 <CgMenuRight />
                             </div>
                         </div>
                     </div>
-                    <div className="mainHeader flex justifyContentBetween alignItemCenter">
+                </div>
+                <div className="mainHeader">
+                    <div className="container flex justifyContentBetween alignItemCenter">
                         <Socal />
                         <Nav />
                         <a className='globalBtn' href="/">BOOK NOW</a>

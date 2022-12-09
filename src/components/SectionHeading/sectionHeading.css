@@ -1,0 +1,14 @@
+.sectionHeading{
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.sectionHeading p:nth-child(1){
+    color: #3A78C9;
+}
+.sectionHeading p:nth-child(2){
+    margin-top: 10px;
+}
+.sectionHeading h3{
+    color: #223645;
+}
