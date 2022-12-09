@@ -41,7 +41,7 @@ const Header = () => {
                         <div className="contact flex alignItemCenter">
                             <div className="icon colorWhite flex" onClick={() => openContactMobile()}>
                                 <FiPhoneCall />
-                            </div>
+                            </div>hello
                             <div id='contactHeader' className="content">
                                 <p className='colorWhite'>For Further Inquires :</p>
                                 <h5><a className='colorWhite' href="telto:1234567890">123 456 7890</a></h5>
