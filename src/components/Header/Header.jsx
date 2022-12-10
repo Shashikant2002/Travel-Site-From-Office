@@ -13,6 +13,7 @@ import { FiMail } from 'react-icons/fi';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Header = () => {
+    // For contact in mobile Screen
     const openContactMobile = () => {
         const contactHeader = document.getElementById('contactHeader');
         contactHeader.classList.add('contentActive');
@@ -21,7 +22,7 @@ const Header = () => {
         const contactHeader = document.getElementById('contactHeader');
         contactHeader.classList.remove('contentActive');
     }
-
+    // Side Menu
     const sidemenuOpen = () => {
         const sideMenu = document.getElementById('sideMenu');
         sideMenu.classList.add('showSideMenu');
@@ -32,7 +33,7 @@ const Header = () => {
         sideMenu.classList.remove('showSideMenu');
         sideMenu.children[0].style.right = '-100%';
     }
-    
+    // Serach box
     const openSearchBox = () => {
         const searchBox = document.getElementById('searchBox');
         searchBox.classList.add('searchBoxActive');
@@ -41,6 +42,7 @@ const Header = () => {
         const searchBox = document.getElementById('searchBox');
         searchBox.classList.remove('searchBoxActive');
     }
+
     return (
         <>
             <header className='header'>
