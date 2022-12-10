@@ -32,7 +32,15 @@ const Header = () => {
         sideMenu.classList.remove('showSideMenu');
         sideMenu.children[0].style.right = '-100%';
     }
-
+    
+    const openSearchBox = () => {
+        const searchBox = document.getElementById('searchBox');
+        searchBox.classList.add('searchBoxActive');
+    }
+    const closeSearchBox = () => {
+        const searchBox = document.getElementById('searchBox');
+        searchBox.classList.remove('searchBoxActive');
+    }
     return (
         <>
             <header className='header'>
@@ -41,7 +49,7 @@ const Header = () => {
                         <div className="contact flex alignItemCenter">
                             <div className="icon colorWhite flex" onClick={() => openContactMobile()}>
                                 <FiPhoneCall />
-                            </div>hello
+                            </div>
                             <div id='contactHeader' className="content">
                                 <p className='colorWhite'>For Further Inquires :</p>
                                 <h5><a className='colorWhite' href="telto:1234567890">123 456 7890</a></h5>
@@ -53,9 +61,12 @@ const Header = () => {
                         </figure>
                         <div className="menuSearch flex alignItemCenter">
                             <div className="search colorWhite flex justifyContentCenter alignItemCenter">
-                                <BiSearchAlt2 />
-                                <div className="searchBox flex justifyContentCenter alignItemCenter">
-                                    <form  action="/" className='flex flexDirCol'>
+                                <span onClick={() => openSearchBox()} className='flex justifyContentCenter alignItemCenter'><BiSearchAlt2 /></span>
+                                <div className="searchBox flex justifyContentCenter alignItemCenter" id='searchBox'>
+                                    <div onClick={() => closeSearchBox()} className="close">
+                                        <AiFillCloseCircle />
+                                    </div>
+                                    <form action="/" className='flex flexDirCol'>
                                         <input type="text" placeholder='Search Heere' />
                                         <button className='globalBtn' type='sumbit'>Search</button>
                                     </form>
