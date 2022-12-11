@@ -1,0 +1,142 @@
+.videoContent {
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(../../Assets/Image/bannerBackground_1.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.videoContent .container {
+    position: relative;
+}
+
+.videoContent .videoIcon {
+    position: relative;
+    border-radius: 50%;
+    background: #3A78C9;
+    display: inline-flex;
+    padding: 10px;
+    z-index: 9;
+    cursor: pointer;
+}
+
+.videoContent .videoIcon::after {
+    background-color: #3a78c9;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -999;
+    animation: waveWater 5s linear infinite;
+}
+
+.videoContent .videoIcon::before {
+    background-color: #3a78c9;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: -999;
+    animation: waveWater 1s linear .5s infinite;
+}
+
+@keyframes waveWater {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.5);
+        opacity: .5;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.videoContent .videoIcon .playIcon {
+    display: inline-flex;
+    font-size: 2rem;
+}
+
+.videoContent .popup {
+    position: absolute;
+    width: 0px;
+    height: 0vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.86);
+    z-index: 999999999;
+    transition: .5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.videoContent .popupActive {
+    width: 100%;
+    height: 100vh;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.videoContent .popup .popupVideo {
+    width: 100%;
+    max-width: 800px;
+    max-height: 400px;
+    height: 100%;
+}
+
+.videoContent .popup .close {
+    position: absolute;
+    top: 20px;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 20px;
+
+}
+
+.videoContent .content {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.videoContent .content .buttons {
+    margin-top: 20px;
+}
+
+.videoContent .content .buttons button {
+    margin: 0 10px;
+    padding: 15px 42px;
+}
+
+.videoContent .counter .card h3 {
+    color: #223645;
+}
+
+.videoContent .counter .card p {
+    color: #3A78C9;
+}
+
+.videoContent .counter .card {
+    width: 25%;
+}
+
+.videoContent .counter {
+    background: #fff;
+    border-radius: 25px;
+    padding: 25px 25px;
+    box-shadow: 0px 15px 25px -10px rgb(0 0 0 / 15%);
+    margin-top: 80px;
+    margin-bottom: -150px;
+}

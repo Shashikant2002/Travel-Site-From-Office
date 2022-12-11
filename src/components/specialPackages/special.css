@@ -1,0 +1,52 @@
+.specialPackages{
+    margin-top: 100px;
+}
+
+.specialPackages .globalBtn{
+    margin-top: 30px;
+}
+.specialPackages .globalBtn:hover{
+    color: #3A78C9;
+    border: 1px solid #3A78C9;
+}
+
+.specialPackages .content{
+    margin-top: 30px;
+}
+
+.specialPackages .card:first-child{
+    margin-right: 30px;
+}
+.specialPackages .card:last-child{
+    margin-left: 30px;
+}
+.specialPackages .card{
+    text-align: left;
+    width: 50%;
+    padding: 250px 20px 20px 20px;
+    border-radius: 20px;
+}
+.specialPackages .card .textContent{
+    border-radius: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    max-width: 345px;
+    width: 100%;
+}
+.specialPackages .card .textContent .detail p svg{
+    color: #3A78C9;
+    margin-right: 5px;
+}
+.specialPackages .card .textContent .detail p{
+    margin: 0 3px;
+}
+.specialPackages .card .textContent h4{
+    margin-top: 10px;
+    color: #223645;
+}
+.specialPackages .card .textContent .colorDark{
+    color: #3A78C9;
+}
+.specialPackages .card .textContent .globalBtn{
+    margin-top: 10px;
+}
