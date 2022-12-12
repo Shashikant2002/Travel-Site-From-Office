@@ -76,3 +76,45 @@
 .popular_package .content .cards .card .star .globalBorderBtn {
     margin-top: 10px;
 }
+
+
+@media (max-width: 1024px) {
+    p{
+        font-size: .7rem;
+    }
+    .popular_package .content .cards .card .cardContent .detail{
+        padding: 5px 10px;
+    }
+    .popular_package .content .cards .card .cardContent{
+        padding: 30px 20px;
+    }
+}
+@media (max-width: 425px) {
+    p{
+        font-size: .7rem;
+    }
+    .popular_package .content .cards .card{
+        flex-direction: column;
+        width: 100%;
+    }
+    .popular_package .content .cards .card .image{
+        width: 100%;
+    }
+    .popular_package .content .cards .card .cardContent{
+        width: 100%;
+    }
+    .popular_package .content .cards .card .star{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .popular_package .globalBtn{
+        margin-top: 20px;
+    }
+    .popular_package .content .cards .card .cardContent{
+        padding: 20px;
+    }
+    .popular_package .content .cards .card .cardContent .detail{
+        width: 100%;
+        justify-content: space-between;
+    }
+}

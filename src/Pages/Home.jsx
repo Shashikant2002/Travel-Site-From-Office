@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Banner />
       <PopDest />
-      {/* <PopularPackages /> */}
+      <PopularPackages />
       {/* <VideoContent /> */}
       {/* <SpecialPackages /> */}
       {/* <PhotoGallery /> */}
