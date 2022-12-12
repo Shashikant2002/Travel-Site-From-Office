@@ -112,13 +112,14 @@
 .header .sideMenu .menu{
     position: absolute;
     width: 100%;
-    max-width: 500px;
+    max-width: 390px;
     height: 100%;
     top: 0;
     transition: .5s;
     right: -100%;
     cursor: auto;
     background: #fff;
+    padding: 0 20px;
 }
 @keyframes sidemenuInAnim {
     0%{
@@ -138,14 +139,34 @@
     cursor: pointer;
     font-size: 2.5rem;
 }
+.header .sideMenu .menu .asideContent .profile{
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.header .sideMenu .menu .asideContent .socal{
+    margin-top: 20px;
+}
+.header .sideMenu .menu .asideContent >h5{
+    color: #1e3f69;
+    margin: 30px 0;
+}
+.header .sideMenu .menu .asideContent >h4{
+    color: #1e3f69;
+    margin: 10px 0 5px 0;
+}
 
 .header .mainHeader{
     padding: 10px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.136);
 }
 
+.header .mainHeader .fafaIcon{
+    display: none;
+}
 
 /* Header Responsive Start Here  */
+
 @media (max-width: 768px) {
     p {
         font-size: 0.8rem;
@@ -171,6 +192,49 @@
 
     .header .topHead .icon {
         font-size: 1rem;
+    }
+
+    .header .mainHeader .fafaIcon{
+        display: block;
+        cursor: pointer;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .header .mainHeader .nav >ul{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        /* justify-content: center; */
+        padding: 30% 50px;
+    }
+    .header .mainHeader .nav{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background: rgb(34, 34, 34);
+        max-width: 400px;
+        left: -100%;
+        transition: .5s;
+    }
+    .header .mainHeader .activeNav{
+        left: 0;
+    }
+    .header .nav ul li .level_2{
+        position: initial;
+        margin: 0;
+        transform: translate(0);
+        margin-left: 20px;
+    }
+    .header .mainHeader .nav ul li a{
+        justify-content: left;
+    }
+    .header .mainHeader .nav ul a{
+        font-size: 1.3rem;
+    }
+    .header .mainHeader .nav ul p{
+        font-size: 1.3rem;
+        justify-content: left;
     }
 }
 

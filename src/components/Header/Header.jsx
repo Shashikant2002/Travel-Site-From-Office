@@ -10,6 +10,7 @@ import Logo from '../../Assets/Image/logo.png';
 import Socal from '../Socal/Socal';
 import Nav from '../Nav/Nav';
 import { FiMail } from 'react-icons/fi';
+import { FaBars } from 'react-icons/fa';
 import { HiOutlineLocationMarker } from 'react-icons/hi';
 
 const Header = () => {
@@ -41,6 +42,12 @@ const Header = () => {
     const closeSearchBox = () => {
         const searchBox = document.getElementById('searchBox');
         searchBox.classList.remove('searchBoxActive');
+    }
+
+    // Nav on Phone
+    const openNav = () => {
+        const nav = document.getElementById('nav');
+        nav.classList.add('activeNav');
     }
 
     return (
@@ -86,6 +93,9 @@ const Header = () => {
                         <Nav />
                         <a className='globalBtn' href="/">BOOK NOW</a>
                     </div>
+                        <div onClick={() => openNav()} className="fafaIcon colorWhite">
+                            <FaBars />
+                        </div>
                 </div>
 
                 <div className="sideMenu" id='sideMenu'>
@@ -93,7 +103,7 @@ const Header = () => {
                         <span onClick={() => sidemenuClose()} className="close"><AiFillCloseCircle /></span>
                         <div className="asideContent flex flexDirCol justifyContentCenter alignItemCenter">
                             <h5>OUR PROPRIETOR</h5>
-                            <figure className="profile">
+                            <figure className="profile flex">
                                 <img src={profile} alt="ProfileImage" />
                             </figure>
                             <h4>James Watson</h4>

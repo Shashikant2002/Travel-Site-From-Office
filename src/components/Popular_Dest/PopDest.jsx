@@ -15,7 +15,7 @@ const PopDest = () => {
             <section className="popular_dest commonSection">
                 <div className="container textAlignCenter">
                     <SectionHeading options={sectionHeading} />
-                    <div className="cards flex justifyContentBetween flexWrap">
+                    <div className="cards flex justifyContentCenter">
                         <a href="/">
                             <div className="card" style={{ background: `url(${destImg})` }}>
                                 <div className="content">
