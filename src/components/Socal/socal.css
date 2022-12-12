@@ -14,3 +14,16 @@
 .socal .icon a svg{
     font-size: 1.3rem;
 }
+
+@media (max-width: 1024px){
+    .socal .icon a{
+        margin: 0 2px;
+        font-size: .7rem;
+    }
+}
+@media (max-width: 768px){
+    /* .socal .icon a svg{
+        font-size: 1rem;
+    } */
+    /* .socal .icon a{} */
+}

@@ -1,0 +1,73 @@
+.latestBlog{
+
+}
+
+.latestBlog .blogHeading .sectionHeading{
+    text-align: left;
+    width: 70%;
+    margin: auto 0;
+}  
+.latestBlog .blogHeading .viewAll{
+    width: 30%;
+    text-align: right;
+} 
+.latestBlog .globalBtn:hover{
+    color: #3A78C9;
+    border: 1px solid #3A78C9;
+}
+
+
+.latestBlog .cards .card figure{
+    overflow: hidden;
+    height: 100%;
+    width: 40%;
+}
+.latestBlog .cards .card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.latestBlog .cards .card .card_content{
+    width: 60%;
+}
+.latestBlog .cards{
+    margin-top: 20px;
+}
+.latestBlog .cards .card:hover{
+    cursor: pointer;
+}
+.latestBlog .cards .card:hover figure img{
+    transform: scale(1.2);
+}
+.latestBlog .cards .card{
+    box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 10%);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+    height: 270px;
+}
+.latestBlog .cards .card:nth-child(1){
+    margin-right: 10px;
+}
+.latestBlog .cards .card:nth-child(2){
+    margin-left: 10px;
+}
+.latestBlog .cards .card .card_content{
+    padding: 25px;
+}
+.latestBlog .cards .card .card_content .buttons{
+    margin-top: 10px;
+}
+.latestBlog .cards .card .card_content .buttons .chat{
+    color: #3A78C9;
+}
+.latestBlog .cards .card .card_content .buttons .chat svg{
+    margin-right: 5px;
+}
+.latestBlog .cards .card .card_content p:first-child{
+    color: #3A78C9;
+}
+.latestBlog .cards .card .card_content h4{
+    color: #223645;
+}

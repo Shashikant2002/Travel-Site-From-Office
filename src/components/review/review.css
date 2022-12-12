@@ -1,0 +1,39 @@
+.clientReview {}
+
+.clientReview .react-multi-carousel-list {
+    padding: 10px 15px;
+}
+
+.clientReview .cards .card {
+    /* box-shadow: 0px 0px 15px 0px rgb(0 0 0 / 5%); */
+    padding: 20px;
+    /* border: 1px solid red; */
+}
+
+.clientReview .cards .card>p:first-child {
+    color: #3A78C9;
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.clientReview .cards .card .info {
+    margin-top: 10px;
+}
+
+.clientReview .cards .card .info img {
+    border-radius: 50%;
+    width: 70px;
+    margin-right: 20px;
+}
+
+.clientReview .cards .card .info p {
+    font-weight: 600;
+}
+
+.clientReview .cards .card .info small {
+    color: #3A78C9;
+}
+
+.clientReview .react-multi-carousel-list {
+    padding: 30px 15px;
+}

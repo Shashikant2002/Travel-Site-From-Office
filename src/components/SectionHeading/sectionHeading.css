@@ -12,3 +12,10 @@
 .sectionHeading h3{
     color: #223645;
 }
+
+
+@media (max-width: 425px) {
+    h3{
+        font-size: 1.8rem;
+    }
+}
