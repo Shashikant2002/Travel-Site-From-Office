@@ -9,7 +9,7 @@ import bannerImg1 from '../../Assets/Image/bannerBackground_2.jpg';
 const Banner = () => {
     return (
         <section className="banner">
-            <Carousel className="allSlides" infiniteLoop={true}>
+            <Carousel swipeable={false} autoPlay={true} className="allSlides" infiniteLoop={true}>
                 <div
                     style={{
                         backgroundImage: `linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),url(${bannerImg1})`,
