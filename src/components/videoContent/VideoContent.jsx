@@ -42,7 +42,7 @@ const VideoContent = () => {
             </div>
           </div>
 
-          <div className="counter flex">
+          <div className="counter flex justifyContentCenter flexWrap">
             <div className="card">
               <h3>80K+</h3>
               <p>SATISFIED CUSTOMER</p>

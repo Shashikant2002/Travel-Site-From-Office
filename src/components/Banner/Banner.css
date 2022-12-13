@@ -81,4 +81,7 @@
     .banner .allSlides .carousel-slider .control-arrow{
         display: none;
     }
+    .banner .allSlides .globalBtn{
+        padding: 15px 20px;
+    }
 }

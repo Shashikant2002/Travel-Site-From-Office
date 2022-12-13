@@ -89,13 +89,17 @@
         padding: 30px 20px;
     }
 }
-@media (max-width: 425px) {
-    p{
-        font-size: .7rem;
+@media (max-width: 768px) {
+    .popular_package .content .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
     .popular_package .content .cards .card{
         flex-direction: column;
         width: 100%;
+        max-width: 350px;
     }
     .popular_package .content .cards .card .image{
         width: 100%;
@@ -117,4 +121,11 @@
         width: 100%;
         justify-content: space-between;
     }
+    
+}
+@media (max-width: 425px) {
+    p{
+        font-size: .7rem;
+    }
+    
 }
