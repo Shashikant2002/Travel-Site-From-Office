@@ -161,6 +161,9 @@ h6 {
 }
 @media (max-width: 425px) {
   .commonSection {
-    padding: 20px 0;
+    padding: 0px 0;
+  }
+  .globalBtn{
+    padding: 10px 20px;
   }
 }
