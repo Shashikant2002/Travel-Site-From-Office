@@ -17,7 +17,7 @@ const PhotoGallery = () => {
         <div className="container">
           <SectionHeading options={sectionHeading} />
 
-          <div className="photos flex justifyContentBetween">
+          <div className="photos flex justifyContentBetween flexWrap">
             <div className="row flex flexDirCol justifyContentBetween">
               <figure>
                 <img src={gallery} alt="GalleryImage" />

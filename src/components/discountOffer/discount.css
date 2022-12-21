@@ -53,14 +53,40 @@
 .discountoffer .mainContent .image .client:nth-child(3n+1) {
     border-left: none;
 }
-.discountoffer .mainContent .image .client:nth-child(4){
+
+.discountoffer .mainContent .image .client:nth-child(4) {
     border-bottom: none;
 }
-.discountoffer .mainContent .image .client:nth-child(5){
+
+.discountoffer .mainContent .image .client:nth-child(5) {
     border-bottom: none;
 }
-.discountoffer .mainContent .image .client:nth-child(6){
+
+.discountoffer .mainContent .image .client:nth-child(6) {
     border-bottom: none;
 }
 
 /* .discountoffer .mainContent .image .client{} */
+
+
+@media (max-width: 768px) {
+    .discountoffer .mainContent {
+        flex-direction: column;
+    }
+    .discountoffer .mainContent>div:nth-child(1){
+        text-align: center;
+        width: 100%;
+        padding-right: 0;
+    }
+    .discountoffer .mainContent>div:nth-child(2){
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        padding: 0;
+        max-width: 450px;
+    }
+    .discountoffer .mainContent>div:nth-child(1) .sectionHeading {
+        text-align: center;
+    }
+}

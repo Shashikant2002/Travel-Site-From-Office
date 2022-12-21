@@ -1,5 +1,5 @@
 .specialPackages{
-    margin-top: 100px;
+    margin-top: 170px;
 }
 
 .specialPackages .globalBtn{
@@ -25,7 +25,7 @@
 }
 .specialPackages .card{
     text-align: left;
-    width: 50%;
+    width: 45%;
     padding: 250px 20px 20px 20px;
     border-radius: 20px;
     cursor: pointer;
@@ -54,4 +54,51 @@
 }
 .specialPackages .card .textContent .globalBtn{
     margin-top: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .specialPackages .content .card:first-child {
+        margin-right: 10px;
+    }
+
+    .specialPackages .content .card:last-child {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .specialPackages .card {
+        width: 100%;
+        max-width: 450px;
+    }
+    .specialPackages .content{
+        justify-content: center;
+    }
+    .specialPackages .content .card:first-child {
+        margin-right: 0px;
+    }
+
+    .specialPackages .content .card:last-child {
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 425px) {
+    /* .specialPackages .card {
+        width: 100%;
+    } */
+    /* .specialPackages .content{
+        justify-content: center;
+    }
+    .specialPackages .content .card:first-child {
+        margin-right: 0px;
+    }
+
+    .specialPackages .content .card:last-child {
+        margin-top: 10px;
+        margin-left: 0px;
+    } */
 }
