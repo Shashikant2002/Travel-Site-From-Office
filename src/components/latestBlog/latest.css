@@ -19,7 +19,6 @@
 
 .latestBlog .cards .card figure{
     overflow: hidden;
-    height: 100%;
     width: 40%;
 }
 .latestBlog .cards .card figure img{
@@ -30,6 +29,7 @@
 }
 .latestBlog .cards .card .card_content{
     width: 60%;
+    padding: 25px;
 }
 .latestBlog .cards{
     margin-top: 20px;
@@ -45,16 +45,12 @@
     border-radius: 10px;
     overflow: hidden;
     width: 50%;
-    height: 270px;
 }
 .latestBlog .cards .card:nth-child(1){
     margin-right: 10px;
 }
 .latestBlog .cards .card:nth-child(2){
     margin-left: 10px;
-}
-.latestBlog .cards .card .card_content{
-    padding: 25px;
 }
 .latestBlog .cards .card .card_content .buttons{
     margin-top: 10px;
@@ -70,4 +66,46 @@
 }
 .latestBlog .cards .card .card_content h4{
     color: #223645;
+}
+
+
+@media (max-width: 1024px) {
+    .latestBlog .cards .card{
+        flex-direction: column;
+    }
+    .latestBlog .cards .card figure {
+        width: 100%;
+    }
+    .latestBlog .cards .card .card_content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .latestBlog .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .latestBlog .cards .card:nth-child(1) {
+        margin-right: 0px;
+        max-width: 450px;
+        width: 100%;
+    }
+    .latestBlog .cards .card:nth-child(2) {
+        margin-left: 0px;
+        margin-top: 20px;
+        max-width: 450px;
+        width: 100%;
+    }
+    .latestBlog .blogHeading{
+        flex-direction: column;
+    }
+    .latestBlog .blogHeading .sectionHeading {
+        text-align: center;
+    }
+    .latestBlog .blogHeading .viewAll{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
 }

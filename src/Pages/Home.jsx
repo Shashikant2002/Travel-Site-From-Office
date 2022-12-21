@@ -19,8 +19,8 @@ const Home = () => {
       <SpecialPackages />
       <PhotoGallery />
       <DiscountOffer />
-      {/* <LatestBlog /> */}
-      {/* <Review /> */}
+      <LatestBlog />
+      <Review />
     </>
   )
 }
