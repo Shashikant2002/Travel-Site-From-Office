@@ -40,7 +40,7 @@ const Review = () => {
 
                     <Carousel responsive={responsive}
                         infinite={true}
-                        
+                        removeArrowOnDeviceType={["tablet", "mobile"]}
                         className="cards">
                         <div className="card">
                             <p><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></p>

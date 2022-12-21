@@ -11,7 +11,7 @@ const Footer = () => {
         <>
             <footer className="footer">
                 <div className="container">
-                    <div className="footContent justifyContentBetween flex">
+                    <div className="footContent justifyContentBetween flex flexWrap">
                         <div className="col logoContent">
                             <div className="logo">
                                 <img src={Logo} alt="Footer Logo" />
