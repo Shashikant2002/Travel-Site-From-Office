@@ -99,7 +99,7 @@
     .popular_package .content .cards .card{
         flex-direction: column;
         width: 100%;
-        max-width: 350px;
+        max-width: 450px;
     }
     .popular_package .content .cards .card .image{
         width: 100%;

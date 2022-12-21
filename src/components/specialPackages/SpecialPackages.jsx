@@ -18,7 +18,7 @@ const SpecialPackages = () => {
       <div className="commonSection specialPackages">
         <div className="container textAlignCenter">
           <SectionHeading options={sectionHeading} />
-          <div className="content flex justifyContentBetween">
+          <div className="content flexWrap flex justifyContentCenter">
             <div className="card" style={{ background: `url(${packageImg})` }}>
               <div className="textContent">
                 <div className="detail flex">
