@@ -5,7 +5,6 @@ import { BiSearchAlt2 } from 'react-icons/bi';
 import { CgMenuRight } from 'react-icons/cg';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import profile from '../../Assets/Image/postThumb.jpg';
-// import { Link } from 'react-router-dom';
 import Logo from '../../Assets/Image/logo.png';
 import Socal from '../Socal/Socal';
 import Nav from '../Nav/Nav';
