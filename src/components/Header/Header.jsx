@@ -76,7 +76,7 @@ const Header = () => {
                                         <AiFillCloseCircle />
                                     </div>
                                     <form action="/" className='flex flexDirCol'>
-                                        <input type="text" placeholder='Search Heere' />
+                                        <input className='textAlignCenter' type="text" placeholder='Search Heere' />
                                         <button className='globalBtn' type='sumbit'>Search</button>
                                     </form>
                                 </div>

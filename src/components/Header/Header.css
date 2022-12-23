@@ -20,24 +20,31 @@
 
 .header .menuSearch .search .searchBox form input{
     margin-bottom: 20px;
-    padding: 20px 29px;
+    padding: 15px 35px;
     font-size: 1.5rem;
     border-radius: 49px;
     outline: none;
-    border: none;
-    color: #fff;
+    border: 1px solid #00000029;
+    color: rgb(27, 27, 27);
     background: #ffffff26;
 }
 .header .menuSearch .search .searchBox form .globalBtn{
-    padding: 20px 0;
+    padding: 15px 0;
     font-size: 1.5rem;
     width: 50%;
     margin: 0 auto;
-
+    
+}
+.header .menuSearch .search .searchBox form .globalBtn:hover{
+    color: #3A78C9;
+    border: 1px solid #3A78C9;
 }
 .header .menuSearch .search .searchBox form{
     width: 100%;
     max-width: 500px;
+    background: #fff;
+    padding: 100px 20px;
+    border-radius: 5px;
 }
 .header .menuSearch .search .searchBox .close{
     position: absolute;
@@ -57,6 +64,7 @@
     background: #000000e8;
     z-index: 999999;
     position: fixed;
+    padding: 20px;
 }
 .header .menuSearch .search .searchBoxActive{
     transform: scale(1);
@@ -266,27 +274,40 @@
         font-size: 1rem;
     }
 
+    .header .contact .content .colorWhite{
+        color: #000;
+    }
     .header .contact .content {
         position: absolute;
-        width: 100%;
-        left: 0;
-        top: 0;
+        width: 90%;
+        transform: translate(-50%);
+        left: 50%;
+        top: 50%;
         text-align: center;
-        background: #000000ba;
+        background: #ffffff;
         display: flex;
         height: 0vh;
         flex-direction: column;
         justify-content: center;
         transition: .5s;
         overflow: hidden;
+        border-radius: 5px;
     }
     .header .contact .content .contactClose{
-        margin-top: 10%;
         display: block;
         cursor: pointer;
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .header .contact .contentActive{
-        height: 100vh;
+        height: 30vh;
+    }
+
+    .header .menuSearch .search .searchBox .close {
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+    }
+    .header .menuSearch .search .searchBox form {
+        padding: 50px 20px;
     }
 }
