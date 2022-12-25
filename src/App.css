@@ -150,6 +150,10 @@ h6 {
   width: 100%;
 }
 
+.AboutUs .videoContent .counter{
+  display: none;
+}
+
 
 @media (max-width: 768px) {
   .globalBtn{

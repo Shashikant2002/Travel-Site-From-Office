@@ -1,0 +1,28 @@
+
+.intro .container{
+    display: flex;
+}
+.intro .mainContent{
+    width: 70%;
+    border: 1px solid red;
+    margin-right: 20px;
+}
+.intro .cardContent{
+    width: 30%;
+    border: 1px solid red;
+}
+
+.intro .mainContent .figContent img{
+    width: 100%;
+    display: inline-block;
+}
+.intro .mainContent .figContent{
+    border-radius: 10%;
+    overflow: hidden;
+    position: relative;
+    width: 80%;
+}
+.intro .mainContent .figContent h4{
+    position: absolute;
+   background: #3A78C9;
+}
