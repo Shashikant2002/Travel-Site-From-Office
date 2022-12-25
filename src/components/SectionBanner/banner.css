@@ -1,0 +1,9 @@
+.pagesBanner{
+    padding: 260px  0 150px 0;
+}
+
+@media (max-width: 425px) {
+    .pagesBanner {
+        padding: 200px 0 100px 0;
+    }
+}

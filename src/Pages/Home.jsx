@@ -12,15 +12,17 @@ import VideoContent from '../components/videoContent/VideoContent'
 const Home = () => {
   return (
     <>
-      <Banner />
-      <PopDest />
-      <PopularPackages />
-      <VideoContent />
-      <SpecialPackages />
-      <PhotoGallery />
-      <DiscountOffer />
-      <LatestBlog />
-      <Review />
+      <div className="homePage">
+        <Banner />
+        <PopDest />
+        <PopularPackages />
+        <VideoContent />
+        <SpecialPackages />
+        <PhotoGallery />
+        <DiscountOffer />
+        <LatestBlog />
+        <Review />
+      </div>
     </>
   )
 }
