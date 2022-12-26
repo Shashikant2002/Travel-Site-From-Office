@@ -1,28 +1,102 @@
-
-.intro .container{
+.intro .container {
     display: flex;
 }
-.intro .mainContent{
+
+.intro .mainContent {
     width: 70%;
-    border: 1px solid red;
     margin-right: 20px;
 }
-.intro .cardContent{
+
+.intro .cardContent {
     width: 30%;
-    border: 1px solid red;
 }
 
-.intro .mainContent .figContent img{
+.intro .cardContent .cards {
+    width: 100%;
+}
+
+.intro .cardContent .cards .card h4 {
+    margin: 5px 0;
+    color: #223645;
+}
+
+.intro .cardContent .cards .card {
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.intro .cardContent .cards .card .icon svg{
+    display: flex;
+}
+.intro .cardContent .cards .card .icon {
+    background: #3A78C9;
+    display: inline-block;
+    font-size: 3rem;
+    padding: 30px;
+    border-radius: 100px;
+}
+
+.intro .mainContent .figContent img {
     width: 100%;
     display: inline-block;
+    border-radius: 40px;
 }
-.intro .mainContent .figContent{
+
+.intro .mainContent .figContent {
     border-radius: 10%;
-    overflow: hidden;
     position: relative;
     width: 80%;
 }
-.intro .mainContent .figContent h4{
+
+.intro .mainContent p:last-child {
+    margin-top: 10px;
+}
+
+.intro .mainContent p {
+    margin-top: 5px;
+}
+
+.intro .mainContent h3 {
+    color: #223645;
+    margin-top: 20px;
+}
+
+.intro .mainContent .figContent h4 {
     position: absolute;
-   background: #3A78C9;
+    background: #3A78C9;
+    right: -40%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 40px;
+    width: 100%;
+    max-width: 250px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .intro .container{
+        flex-direction: column;
+    }
+    .intro .mainContent {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .intro .cardContent{
+        width: 100%;
+    }
+}
+@media (max-width: 550px) {
+    .intro .mainContent .figContent {
+        width: 100%;
+    }
+    .intro .mainContent .figContent h4{
+        position: initial;
+        transform: translate(0, 0);
+        max-width: 550px;
+        padding: 10px 10px;
+        border-radius: 2px;
+    }
+    .intro .mainContent .figContent img{
+        border-radius: 2px;
+    }
 }
