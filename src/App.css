@@ -9,6 +9,9 @@ body {
   overflow-x: hidden;
   position: relative;
 }
+/* svg{
+  display: flex;
+} */
 
 ::selection {
   background-color: rgba(255, 255, 255, 0.98);
