@@ -152,11 +152,23 @@ h6 {
   padding: 80px 0;
   width: 100%;
 }
+.homePage .counter{
+  margin-top: 60px;
+  margin-bottom: -150px;
+}
 
 .AboutUs .videoContent .counter{
   display: none;
 }
 
+.destination .popDestation{
+  padding: 80px 0;
+  gap: 20px;
+}
+.destination .counter{
+  margin-bottom: -60px;
+  position: relative;
+}
 
 @media (max-width: 768px) {
   .globalBtn{

@@ -79,9 +79,6 @@
 
 
 @media (max-width: 1024px) {
-    p{
-        font-size: .7rem;
-    }
     .popular_package .content .cards .card .cardContent .detail{
         padding: 5px 10px;
     }
