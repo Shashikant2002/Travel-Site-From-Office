@@ -119,35 +119,6 @@
     margin: 0 10px;
     padding: 15px 42px;
 }
-
-.videoContent .counter .card h3 {
-    color: #223645;
-}
-
-.videoContent .counter .card p {
-    color: #3A78C9;
-}
-
-.videoContent .counter .card {
-    width: 100%;
-    /* margin-top: 20px; */
-    max-width: 200px;
-}
-
-.videoContent .counter {
-    background: #fff;
-    border-radius: 25px;
-    padding: 25px 25px;
-    box-shadow: 0px 15px 25px -10px rgb(0 0 0 / 15%);
-    margin-top: 80px;
-    margin-bottom: -150px;
-}
-
-@media (max-width: 768px) {
-    .videoContent .counter .card {
-        margin-top: 20px;
-    }
-}
 @media (max-width: 425px) {
     .videoContent .content .buttons button{
         padding: 15px 25px;

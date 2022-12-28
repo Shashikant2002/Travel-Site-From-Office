@@ -16,6 +16,7 @@ const Nav = () => {
         <ul className='flex'>
           <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/">HOME</Link></li>
           <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/about">ABOUT US</Link></li>
+          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/destination">DESTINATION</Link></li>
           <li><p className='colorWhite flex justifyContentCenter alignItemCenter'>PACKAGES <BiCaretDown /></p>
             <ul className='level_2'>
               <li><a href="/">Home</a></li>
@@ -36,7 +37,7 @@ const Nav = () => {
               <li><a href="/">Home</a></li>
             </ul>
           </li>
-          <li><a className='colorWhite flex justifyContentCenter alignItemCenter' href="/">CONTACT US</a></li>
+          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/contact">CONTACT US</Link></li>
         </ul>
       </div>
     </>

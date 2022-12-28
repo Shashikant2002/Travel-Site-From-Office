@@ -2,6 +2,7 @@ import React from "react";
 import "./video.css";
 import { BsFillPlayFill } from "react-icons/bs";
 import { AiFillCloseCircle } from "react-icons/ai";
+import Counter from "../Counter/Counter";
 
 const VideoContent = () => {
   const showPopup = () => {
@@ -41,25 +42,7 @@ const VideoContent = () => {
               <button className="globalBorderBtn">BOOK NOW</button>
             </div>
           </div>
-
-          <div className="counter flex justifyContentCenter flexWrap">
-            <div className="card">
-              <h3>80K+</h3>
-              <p>SATISFIED CUSTOMER</p>
-            </div>
-            <div className="card">
-              <h3>80K+</h3>
-              <p>SATISFIED CUSTOMER</p>
-            </div>
-            <div className="card">
-              <h3>80K+</h3>
-              <p>SATISFIED CUSTOMER</p>
-            </div>
-            <div className="card">
-              <h3>80K+</h3>
-              <p>SATISFIED CUSTOMER</p>
-            </div>
-          </div>
+          <Counter />
         </div>
         <div
           className="popup flex justifyContentCenter alignItemCenter"

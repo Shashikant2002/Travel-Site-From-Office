@@ -1,8 +1,8 @@
 import React from 'react';
 import SectionHeading from '../SectionHeading/SectionHeading';
 import "./popDest.css";
-import { AiFillStar } from 'react-icons/ai';
 import destImg from '../../Assets/Image/popular_Dest.jpg'
+import PopDestCard from '../popDestCard/PopDestCard';
 
 const PopDest = () => {
     const sectionHeading = {
@@ -16,36 +16,9 @@ const PopDest = () => {
                 <div className="container textAlignCenter">
                     <SectionHeading options={sectionHeading} />
                     <div className="cards flex justifyContentCenter">
-                        <a href="/">
-                            <div className="card" style={{ background: `url(${destImg})` }}>
-                                <div className="content">
-                                    <div className="star colorWhite flex"><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                                    <p className='colorBlue'>ITALY</p>
-                                    <h4>SAN MIGUEL</h4>
-                                    <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/">
-                            <div className="card" style={{ background: `url(${destImg})` }}>
-                                <div className="content">
-                                    <div className="star colorWhite flex"><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                                    <p className='colorBlue'>ITALY</p>
-                                    <h4>SAN MIGUEL</h4>
-                                    <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="/">
-                            <div className="card" style={{ background: `url(${destImg})` }}>
-                                <div className="content">
-                                    <div className="star colorWhite flex"><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /><AiFillStar /></div>
-                                    <p className='colorBlue'>ITALY</p>
-                                    <h4>SAN MIGUEL</h4>
-                                    <p>Fusce hic augue velit wisi ips quibusdam pariatur, iusto.</p>
-                                </div>
-                            </div>
-                        </a>
+                        <PopDestCard background = {destImg}  />
+                        <PopDestCard background = {destImg}  />
+                        <PopDestCard background = {destImg}  />
                     </div>
                     <a className='globalBtn' href="/">MORE DESTINATION</a>
                 </div>
