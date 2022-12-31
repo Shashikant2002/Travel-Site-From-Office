@@ -1,3 +1,29 @@
-.contactCard{
+.contactCard {
     background: #F8F8F8;
+}
+
+.contactCard .card {
+    width: 100%;
+    padding: 40px 30px;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin: 5px 20px;
+}
+
+.contactCard .card h4 {
+    margin-top: 10px;
+}
+
+.contactCard .card .icon {
+    background: #3A78C9;
+    padding: 20px;
+    border-radius: 100px;
+}
+
+.contactCard .card .icon svg {
+    display: flex;
+    color: #fff;
+    font-size: 2rem;
 }
