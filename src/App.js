@@ -1,3 +1,4 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
@@ -6,20 +7,52 @@ import Home from './Pages/Home';
 import AboutUs from './Pages/AboutUs';
 import Destination from './Pages/Destination';
 import ContactUs from './Pages/ContactUs';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { Bars } from 'react-loader-spinner'
+import { useLocation } from 'react-router-dom';
 
-function App() {
+
+
+const App = () => {
+  // const location = useLocation();
+  // console.log(location)
+  const [loader, setLoader] = useState(false);
+
+  useEffect(() => {
+    setLoader(true);
+    setTimeout(() => {
+      setLoader(false);
+    }, 2000)
+  }, []);
+
+
   return (
     <>
-      <Router>
-        <Header />
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/about' element={<AboutUs />} />
-          <Route path='/destination' element={<Destination />} />
-          <Route path='/contact' element={<ContactUs />} />
-        </Routes>
-        <Footer />
-      </Router>
+      {loader ?
+        <div div className="loader">
+          <Bars
+            height="100"
+            width="100"
+            radius="9"
+            color="#3A78C9"
+            ariaLabel="loading"
+            wrapperStyle
+            wrapperClass
+          />
+        </div>
+        :
+        <Router>
+          <Header />
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<AboutUs />} />
+            <Route path='/destination' element={<Destination />} />
+            <Route path='/contact' element={<ContactUs />} />
+          </Routes>
+          <Footer />
+        </Router>
+      }
     </>
   );
 }
