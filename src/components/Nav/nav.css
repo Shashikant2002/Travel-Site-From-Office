@@ -34,16 +34,21 @@
     background: #3A78C9;
 }
 
+.nav ul li p{
+    cursor: pointer;
+}
 .nav ul li .level_2 li a {
     color: #fff;
+    text-align: left;
+    display: block;
+    padding-left: 20px;
 }
 
 .nav ul li .level_2 {
     margin-top: 5px;
     position: absolute;
     width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0%;
     top: 100%;
     background: rgba(0, 0, 0, 0.952);
     text-align: center;
@@ -54,10 +59,9 @@
     border-radius: 10px;
 }
 
-.nav ul li:hover .level_2 {
+.nav ul li .level_2Active {
     height: auto;
     border-top: 2px solid #3A78C9;
-
 }
 
 .nav .navClose {
