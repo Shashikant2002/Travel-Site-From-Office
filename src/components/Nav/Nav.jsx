@@ -2,10 +2,23 @@ import React from 'react';
 import { BiCaretDown } from 'react-icons/bi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import { Link } from 'react-router-dom';
-import './nav.css'
+import './nav.css';
+
+
+const openMenu = (i) => {
+  let level = document.querySelectorAll('.nav .level_2');
+  level[i].classList.toggle('level_2Active');
+  for (let j = 0; j < level.length; j++) {
+    if(j==i){
+    }else{
+      level[j].classList.remove('level_2Active');
+    }
+  }
+}
 
 const Nav = () => {
-  const closeNav = () =>{
+
+  const closeNav = () => {
     const nav = document.getElementById('nav');
     nav.classList.remove('activeNav');
   }
@@ -14,30 +27,30 @@ const Nav = () => {
       <div className="nav" id='nav'>
         <div onClick={() => closeNav()} className="navClose"><AiFillCloseCircle /></div>
         <ul className='flex'>
-          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/">HOME</Link></li>
-          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/about">ABOUT US</Link></li>
-          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/destination">DESTINATION</Link></li>
-          <li><p className='colorWhite flex justifyContentCenter alignItemCenter'>PACKAGES <BiCaretDown /></p>
+          <li><Link onClick={closeNav} className='colorWhite flex justifyContentCenter alignItemCenter' to="/">HOME</Link></li>
+          <li><Link onClick={closeNav} className='colorWhite flex justifyContentCenter alignItemCenter' to="/about">ABOUT US</Link></li>
+          <li><Link onClick={closeNav} className='colorWhite flex justifyContentCenter alignItemCenter' to="/destination">DESTINATION</Link></li>
+          <li><p onClick={() => openMenu(0)} className='colorWhite flex justifyContentCenter alignItemCenter dropDownMenu'>PACKAGES <BiCaretDown /></p>
             <ul className='level_2'>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
             </ul>
           </li>
-          <li><p className='colorWhite flex justifyContentCenter alignItemCenter'>PAGES <BiCaretDown /></p>
+          <li><p onClick={() => openMenu(1)} className='colorWhite flex justifyContentCenter alignItemCenter dropDownMenu'>PAGES <BiCaretDown /></p>
             <ul className='level_2'>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
-              <li><a href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
+              <li><a onClick={closeNav} href="/">Home</a></li>
             </ul>
           </li>
-          <li><Link className='colorWhite flex justifyContentCenter alignItemCenter' to="/contact">CONTACT US</Link></li>
+          <li><Link onClick={closeNav} className='colorWhite flex justifyContentCenter alignItemCenter' to="/contact">CONTACT US</Link></li>
         </ul>
       </div>
     </>

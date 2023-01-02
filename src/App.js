@@ -10,7 +10,7 @@ import ContactUs from './Pages/ContactUs';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Bars } from 'react-loader-spinner'
-import { useLocation } from 'react-router-dom';
+// import { useLocation } from 'react-router-dom';
 
 
 
