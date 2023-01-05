@@ -10,6 +10,7 @@ import ContactUs from './Pages/ContactUs';
 import { useState } from 'react';
 import { useEffect } from 'react';
 import { Bars } from 'react-loader-spinner'
+import Packages from './Pages/Packages';
 // import { useLocation } from 'react-router-dom';
 
 
@@ -49,6 +50,7 @@ const App = () => {
             <Route path='/about' element={<AboutUs />} />
             <Route path='/destination' element={<Destination />} />
             <Route path='/contact' element={<ContactUs />} />
+            <Route path='/packages' element={<Packages />} />
           </Routes>
           <Footer />
         </Router>

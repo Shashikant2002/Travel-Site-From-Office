@@ -178,6 +178,11 @@ h6 {
   position: relative;
 }
 
+.packages .counter{
+  margin-bottom: -60px;
+  position: relative;
+}
+
 @media (max-width: 768px) {
   .globalBtn{
     padding: 10px 20px;
