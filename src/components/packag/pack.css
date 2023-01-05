@@ -1,0 +1,98 @@
+.package .card figure img {
+    width: 100%;
+}
+
+.package .card {
+    margin-top: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.package .card .image {
+    display: inherit;
+    width: 30%;
+}
+
+.package .card .cardContent {
+    padding: 40px 40px;
+    background: #f9f9f9;
+    width: 40%;
+    text-align: left;
+}
+
+.package .card .cardContent h4 {
+    color: #223645;
+    transition: .5s;
+    cursor: pointer;
+}
+.package .card .cardContent >p{
+    margin-top: 10px;
+}
+.package .card .cardContent .detail{
+    margin-top: 15px;
+    display: inline-flex;
+    background: #fff;
+    padding: 5px 5px;
+    padding: 5px 15px;
+    border-radius: 5px; 
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.package .card .cardContent .detail p svg{
+    margin-right: 5px;
+}
+.package .card .cardContent .detail p{
+    margin: 0 10px;
+}
+
+.package .card .cardContent h4:hover {
+    color: rgba(58, 120, 201, 0.85);
+}
+
+.package .card .star {
+    background: rgba(58, 120, 201, 0.85);
+    width: 30%;
+}
+
+.package .card .star p span {
+    margin-left: 10px;
+}
+
+.package .card .star .globalBorderBtn {
+    margin-top: 10px;
+}
+
+@media (max-width: 1024px) {
+    .package .card .cardContent .detail{
+        padding: 5px 10px;
+    }
+    .package .card .cardContent{
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .package .card{
+        flex-direction: column;
+        width: 100%;
+        max-width: 450px;
+    }
+    .package .card .image{
+        width: 100%;
+    }
+    .package .card .cardContent{
+        width: 100%;
+    }
+    .package .card .star{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .package .card .cardContent{
+        padding: 20px;
+    }
+    .package .card .cardContent .detail{
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+}
